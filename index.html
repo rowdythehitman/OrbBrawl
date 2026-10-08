@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0d0b1f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Orb Brawl</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="foe">
+    <div class="stats"><span id="e-hand">🂠 0</span><span id="e-deck">📚 0</span></div>
+    <div class="orb-wrap" id="orb-e" data-orb="e"></div>
+    <div class="stats right"><span id="e-mana"></span></div>
+  </header>
+
+  <main id="board">
+    <div class="lane-row" id="row-e"></div>
+    <div class="divider"><span>⚔ LANES ⚔</span></div>
+    <div class="lane-row" id="row-p"></div>
+  </main>
+
+  <section id="me">
+    <div class="mana-box"><div id="p-mana"></div><small id="p-mana-t"></small></div>
+    <div class="orb-wrap big" id="orb-p" data-orb="p"></div>
+    <button id="end">End<br>Turn</button>
+  </section>
+
+  <div id="info"><span id="info-t"></span><button id="cast" hidden>Cast</button></div>
+  <footer id="hand"></footer>
+</div>
+
+<div id="overlay">
+  <div class="panel">
+    <h1 id="ov-title"></h1>
+    <p id="ov-text"></p>
+    <button id="ov-btn">Play</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
